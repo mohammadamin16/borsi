@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node main.ts",
+    "sheet": "ts-node sheet.ts",
+    "bot": "ts-node bot.ts",
     "start:prod": "npm run build && node dist/main.js",
     "dev": "ts-node-dev --respawn main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,10 +16,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "node-telegram-bot-api": "^0.66.0",
     "puppeteer": "^21.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "xlsx-js-style": "^1.2.0",
+    "xlsx-style": "^0.8.13"
   },
   "devDependencies": {
     "@types/node": "^20.5.0",
